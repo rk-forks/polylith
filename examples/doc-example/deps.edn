@@ -3,10 +3,10 @@
                                 "bases/cli/resources"
                                 "bases/user-api/src"
                                 "bases/user-api/resources"]
-                  :extra-deps {org.clojure/clojure {:mvn/version "1.10.3"}
-                               org.clojure/tools.deps {:mvn/version "0.16.1281"}
-                               org.apache.logging.log4j/log4j-core {:mvn/version "2.13.3"}
-                               org.apache.logging.log4j/log4j-slf4j-impl {:mvn/version "2.13.3"}}}
+                  :extra-deps {org.clojure/clojure {:mvn/version "1.11.1"}
+                               org.clojure/tools.deps {:mvn/version "0.18.1308"}
+                               org.apache.logging.log4j/log4j-core {:mvn/version "2.20.0"}
+                               org.apache.logging.log4j/log4j-slf4j-impl {:mvn/version "2.20.0"}}}
 
             :test {:extra-paths ["bases/cli/test"
                                  "bases/user-api/test"
@@ -20,7 +20,7 @@
                                     "components/user-remote/resources"
                                     "components/user-remote/test"]}
 
-            :build {:deps {org.clojure/tools.deps {:mvn/version "0.16.1281"}
+            :build {:deps {org.clojure/tools.deps {:mvn/version "0.18.1308"}
                            io.github.seancorfield/build-clj
                            {:git/tag "v0.9.2" :git/sha "9c9f078"}}
                     :paths ["build/resources"]
@@ -29,5 +29,5 @@
             :poly {:main-opts ["-m" "polylith.clj.core.poly-cli.core"]
                    :extra-deps {polyfy/polylith
                                 {:git/url   "https://github.com/polyfy/polylith.git"
-                                 :sha       "78b2c77c56d1b41109d68b451069affac935200e"
+                                 :sha       "01a0c9d7783ac2ac9abab4d7d3d0fe4e28ffdb4e"
                                  :deps/root "projects/poly"}}}}}
